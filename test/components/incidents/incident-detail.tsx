@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import Link from "next/link"
+import { Link } from "react-router-dom"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -46,7 +46,7 @@ export function IncidentDetail({ incident }: IncidentDetailProps) {
       {/* Back button and actions */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <Button variant="ghost" size="sm" asChild>
-          <Link href="/incidents" className="gap-2">
+          <Link to="/incidents" className="gap-2">
             <ArrowLeft className="h-4 w-4" />
             Back to Incidents
           </Link>

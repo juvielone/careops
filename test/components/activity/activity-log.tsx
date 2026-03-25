@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import { Link } from "react-router-dom"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
@@ -96,7 +96,7 @@ export function ActivityLog() {
                         </div>
                         <div className="mt-2 flex flex-wrap items-center gap-2">
                           <Link
-                            href={`/incidents/${activity.incidentId}`}
+                            to={`/incidents/${activity.incidentId}`}
                             className="inline-flex items-center gap-1.5 rounded-md border border-border bg-muted/50 px-2 py-1 text-xs font-mono hover:bg-muted"
                           >
                             {activity.incidentId}

@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "react-router-dom"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -19,7 +19,7 @@ export function IncidentPreview() {
           Active Incidents
         </CardTitle>
         <Button variant="ghost" size="sm" asChild>
-          <Link href="/incidents" className="flex items-center gap-1">
+          <Link to="/incidents" className="flex items-center gap-1">
             View All
             <ArrowRight className="h-4 w-4" />
           </Link>
@@ -30,7 +30,7 @@ export function IncidentPreview() {
           {openIncidents.map((incident) => (
             <Link
               key={incident.id}
-              href={`/incidents/${incident.id}`}
+              to={`/incidents/${incident.id}`}
               className="block rounded-lg border border-border p-4 transition-colors hover:bg-accent"
             >
               <div className="flex items-start justify-between gap-4">

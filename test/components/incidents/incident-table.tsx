@@ -1,6 +1,6 @@
 "use client"
 
-import Link from "next/link"
+import { Link } from "react-router-dom"
 import {
   Table,
   TableBody,
@@ -58,7 +58,7 @@ export function IncidentTable({ incidents }: IncidentTableProps) {
             <TableRow key={incident.id} className="group">
               <TableCell>
                 <Link
-                  href={`/incidents/${incident.id}`}
+                  to={`/incidents/${incident.id}`}
                   className="font-mono text-sm text-primary hover:underline"
                 >
                   {incident.id}
@@ -66,7 +66,7 @@ export function IncidentTable({ incidents }: IncidentTableProps) {
               </TableCell>
               <TableCell>
                 <Link
-                  href={`/incidents/${incident.id}`}
+                  to={`/incidents/${incident.id}`}
                   className="font-medium hover:text-primary"
                 >
                   {incident.title}
@@ -126,7 +126,7 @@ export function IncidentTable({ incidents }: IncidentTableProps) {
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
                     <DropdownMenuItem asChild>
-                      <Link href={`/incidents/${incident.id}`}>
+                      <Link to={`/incidents/${incident.id}`}>
                         <Eye className="mr-2 h-4 w-4" />
                         View Details
                       </Link>
