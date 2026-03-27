@@ -97,7 +97,6 @@ Backend:
 
 ## 📷 Screenshots
 
-*(Optional — you can add later)*
 <img width="1919" height="906" alt="image" src="https://github.com/user-attachments/assets/cd09f670-ecd7-41ab-9023-308ba3cf1014" />
 <img width="1647" height="896" alt="image" src="https://github.com/user-attachments/assets/7ab3f5f8-34a4-4e42-8a4f-c2e05118fa01" />
 
